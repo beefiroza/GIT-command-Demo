@@ -1,0 +1,15 @@
+git init
+git clone
+git status
+git add filename
+git add .
+git restore
+git commit -m
+git reset 
+git push
+git revoke
+git rm 
+git stash
+git fetch
+git merge
+
