@@ -1,15 +1,67 @@
-git init
+# Most Used Git Commands
+-------------------------------------------------
+🔹 Setup & Config
+git config --global user.name "Your Name"
+git config --global user.email "your@email.com"
+
+-------------------------------------------------
+🔹 Repository Setup
+git init                  # Create new repo
+git clone <url>           # Copy repo from remote
+-------------------------------------------------
+🔹 Check Status & Info
+git status                # Check changes
+git log                   # Commit history
+git log --oneline         # Short history
+git diff                  # Show changes
+-------------------------------------------------
+🔹 Staging & Commit
+git add file.txt          # Add single file
+git add .                 # Add all files
+git commit -m "message"   # Commit changes
+-------------------------------------------------
+🔹 Branching
+git branch                # List branches
+git branch feature        # Create branch
+git checkout feature      # Switch branch
+git switch feature        # Modern switch
+git checkout -b feature   # Create + switch
+-----------------------------------------------------------
+🔹 Merging
+git merge feature         # Merge branch
+-----------------------------------------------------------
+🔹 Remote Operations
+git remote -v             # Check remote
+git remote add origin <url>
+git push origin main      # Push code
+git pull origin main      # Pull latest
+git fetch                 # Fetch without merge
+-----------------------------------------------------------
+🔹 Undo / Reset
+git reset --soft HEAD~1   # Undo commit (keep changes)
+git reset --hard HEAD~1   # Undo commit (delete changes)
+git checkout -- file.txt  # Discard file changes
+-----------------------------------------------------------
+🔹 Stash (Temporary Save)
+git stash                 # Save changes
+git stash pop             # Apply changes back
+------------------------------------------------------------
+🔹 Delete
+git branch -d feature     # Delete branch
+git rm file.txt           # Remove file
+
+-----------------------------------------------------------
+Top Must-Know 
 git clone
 git status
-git add filename
-git add .
-git restore
-git commit -m
-git reset 
+git add
+git commit
 git push
-git revoke
-git rm 
-git stash
-git fetch
+git pull
+git branch
+git checkout / switch
 git merge
-
+git log
+git add .
+git commit -m "msg"
+git push
